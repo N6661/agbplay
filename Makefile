@@ -1,10 +1,10 @@
 CXX = g++
 #CXXFLAGS = -D_XOPEN_SOURCE=700 -Wall -Wextra -Wconversion -Wunreachable-code -std=c++17 -O3 -g
-CXXFLAGS = -Wall -Wextra -Wconversion -Wunreachable-code -std=c++17 -Og -g -fsanitize=address
+CXXFLAGS = -Wall -Wextra -Wconversion -Wunreachable-code -std=c++17 -Og -g -I/opt/homebrew/include -fsanitize=address
 BINARY = agbplay
 # LIBS = -lm -lncursesw -pthread -lsndfile -lportaudio -ljsoncpp
 # Use this macro if you have linker errors with ncursesw
-LIBS = -lm -lncurses -pthread -lsndfile -lportaudio -ljsoncpp
+LIBS = -lm -L/opt/homebrew/lib -lncurses -pthread -lsndfile -lportaudio -ljsoncpp
 
 GREEN = \033[1;32m
 RED = \033[1;31m
