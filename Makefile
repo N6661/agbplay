@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -D_XOPEN_SOURCE=700 -Wall -Wextra -Wconversion -Wunreachable-code -std=c++17 -O3 -g -I/opt/homebrew/include
+CXXFLAGS = -Wall -Wextra -Wconversion -Wunreachable-code -std=c++17 -O3 -g -I/opt/homebrew/include
 #CXXFLAGS = -D_XOPEN_SOURCE=700 -Wall -Wextra -Wconversion -Wunreachable-code -std=c++17 -Og -g -fsanitize=address
 BINARY = agbplay
 # LIBS = -lm -lncursesw -pthread -lsndfile -lportaudio -ljsoncpp
